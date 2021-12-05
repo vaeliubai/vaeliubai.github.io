@@ -24,7 +24,7 @@
 
   
 
-  <title>about | 留白酒馆</title>
+  <title>CTFWP | 留白酒馆</title>
 
   
 
@@ -45,9 +45,9 @@
   <div class="root-container">
     
 <!-- header container -->
-<header class="header-container">
+<header class="header-container post">
   
-    <div class="post-image" style="background-image: url(/imgs/about.png)"></div>
+    <div class="post-image" style="background-image: url(/imgs/1.png)"></div>
   
 
   <!-- navbar -->
@@ -95,38 +95,262 @@
 
   
   
-
-  
-  
     <div class="header-content">
-      <div class="post-text layout-block layout-padding">
-        <h1 class="title-wrap">about</h1>
-        
-          <h2 class="title-sub-wrap">有趣的灵魂</h2>
-        
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">CTFWP</h1>
+          <h2 class="title-sub-wrap">
+            <strong>留白</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2021-12-05T05:43:32.183Z" itemprop="datePublished">2021-12-05</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E6%80%BB%E7%BB%93/">🏷️ 总结</a></li>
+  
+</ul>
+        </div>
       </div>
     </div>
+  
+
+  
   
   
 </header>
 
-    <!-- 分页(其他自定义页面) -->
+    <!-- 文章 -->
 
-<!-- 自定义页面 -->
-
+<!-- 文章内容 -->
 <div class="body-container">
   <article class="content-container layout-block post-container">
     <div class="article-info">
       
+      
+      
+      
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        
+        <p><strong>MISC:</strong></p>
+<p><strong>1.</strong> <em><strong>*小兔子*</strong></em></p>
+<p>兔子图片，右键属性详细信息里面的备注里可以找到一串字符串</p>
+<p>用rabbit解密 csdn搜在线解密工具即可得到flag</p>
+<p><strong>2.</strong> <em><strong>*我在城楼观风景*</strong></em></p>
+<p>首先给的是一个.txt文件，打开是一堆乱码，将扩展名改为.jpg之后会是一张图片，flag在最下面，黑色的字。</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/1.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>3.</strong> <em><strong>*Stream*</strong></em></p>
+<p>首先得到一个压缩包，解压得到一个.pcapng文件和一张图片，根据图片提示用WireShark工具中，之后再此栏搜索flag.txt，之后可以找到与flag相关的流，之后再追踪HTTP流发现Unicode密文，加密码直接在线解密就行，这道题和CSDN一道题类似我是参照上面的方法整出来。（附上链接）<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq1124794084/article/details/79150285">https://blog.csdn.net/qq1124794084/article/details/79150285</a></p>
+ <span id="more"></span>
+
+<p><strong>4.</strong> <em><strong>*如来の兽*</strong></em></p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/2.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p>直接与佛论禅解密得到兽语，再用兽语解密可以得到社会主义核心价值观，最后解密即可以得到flag。</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/3.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>5.</strong> <em><strong>*PDF*</strong></em></p>
+<p>把图片用浏览器打开直接可以复制上边隐藏的文字，得到是“就这 不会吧？…”，阴阳怪气密文，在线解密得到flag</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/4.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p>最后flag为flag{welcometohenu}（应该就是这个）</p>
+<p><strong>6.</strong> <em><strong>*MUSIC：*</strong></em></p>
+<p>（去年的题）刚开始改后缀发现还是打不开…上网搜用这个MuseScore打开得到五线谱，接下来按照一个音乐解密一个一个对 </p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/5.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>7.</strong> <em><strong>*QRcode*</strong></em></p>
+<p>观察二维码缺了三个定位符，没下PS，先在网上截图下来二维码的一个角，用的Windows自带的3D画图补齐扫码之后出现“++++++++[&gt;&gt;++&gt;++++&gt;++++++&gt;++++++++&gt;++++++++++&gt;++++++++++++&gt;++++++++++++++&gt;++++++++++++++++&gt;++++++++++++++++++&gt;++++++++++++++++++++&gt;++++++++++++++++++++++&gt;++++++++++++++++++++++++&gt;++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++&gt;++++++++++++++++++++++++++++++&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;-]&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;–.&lt;+.&gt;+.&lt;+++.&gt;.-.&lt;+++.—.—.&gt;—.&lt;.&gt;–.”</p>
+<p>得到Brainfack密文，在线网站解密得到flag。</p>
+<p><em><strong>*8.Easymisc*</strong></em></p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/6.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p>图片中VIRGINIA翻译过来是一种维吉尼亚加密方式，同时Attribute提示照片属性中看到bfygqlytmk。</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/7.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><em><strong>*9.Trytouse*</strong></em></p>
+<p>根据图片名直接用工具SilentEye打开图片，Decode直接出来flag</p>
+<p><strong>10.</strong> <em><strong>*BoringBoss*</strong></em></p>
+<p>当铺密码加密，根据当铺密码进行题解换成对应字母，然后用培根解密，直接出来flag</p>
+<h5 id="Web："><a href="#Web：" class="headerlink" title="Web："></a><strong>Web：</strong></h5><p><em><strong>*1.白给&amp;签到*</strong></em></p>
+<p>好吧直接看</p>
+<p><em><strong>*2.Welcome*</strong></em></p>
+<p>打开网址，网页上F12 直接看到</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/8.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>3.</strong> <em><strong>*Get*</strong></em></p>
+<p>地址栏直接加上？henu=flag得到flag</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/9.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><em><strong>*4.Post*</strong></em></p>
+<p>直接在火狐里面打开，用MaxHacKBar进行PostData传参，执行得到flag</p>
+<p><em><strong>*5.easy_Cookie*</strong></em></p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/10.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p>对字符串解密得到flag</p>
+<h5 id="Pwn："><a href="#Pwn：" class="headerlink" title="Pwn："></a><strong>Pwn：</strong></h5><p><strong>1.</strong> <em><strong>*连上就给flag*</strong></em></p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/11.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<h5 id="Crypto"><a href="#Crypto" class="headerlink" title="Crypto:"></a><strong>Crypto:</strong></h5><p><strong>1.</strong> <em><strong>*滴滴滴*</strong></em></p>
+<p>摩斯密码在线解密</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/12.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><em><strong>*2.每逢佳节*</strong></em></p>
+<p>base64加密方式的，所以找在线解密工具即可</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/13.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><em><strong>*3.Bacon*</strong></em></p>
+<p>当铺密码转换后将字符转换为数字，进而利用Ascll码转换为字母形式，最后培根解密</p>
+<p><strong>4.</strong> <em><strong>*古典变奏*</strong></em></p>
+<p>先猪圈密码解密得到凯撒密文，凯撒密码解密同时解密位移6，最后栅栏8可以解密得到flag。</p>
+<h5 id="Reverse："><a href="#Reverse：" class="headerlink" title="Reverse："></a><strong>Reverse：</strong></h5><p><strong>1.</strong> <em><strong>*easy_re*</strong></em></p>
+<p>先用exeinfope.exe看看文件是否加壳，判断IDA是64位的，直接拖入。</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/14.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><em><strong>*2.re1*</strong></em></p>
+<p>拖入32位的IDA中，strcmp函数是进行v3和v5的比较，xmmword_413E34的值赋给v5；按R键转换为字符串</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/15.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+   
+
+<p>小端序排序方法，换顺序之后得到flag</p>
+<p><em><strong>*3.keypatch*</strong></em></p>
+<p>循环次数太多sleep（）函数每次执行还会停一次，短时间内根本不可能得到flag，直接把循环次数改小。先找到main函数，f5分析我们需要改的是v3的值，changebyte，利用二进制改成01 00 00 00，改好之后保存更改。</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/19.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+    <figure class="figure-image">
+      <img src="/imgs/first/17.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p>运行得到flag</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/first/18.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
       </section>
 
       
       
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/1.png"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/12/05/hello-world/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">Hello World</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+        </nav>
+      
 
-      
-      
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
     </div>
     <div class="widget-info">
       <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -163,6 +387,8 @@
     </div>
   </div>
 </section>
+
+      
 
       
 <section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -208,7 +434,6 @@
     </div>
   </article>
 </div>
-
 
     <!-- footer container -->
 <footer id="footer" class="footer">
