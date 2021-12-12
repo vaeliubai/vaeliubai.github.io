@@ -24,7 +24,7 @@
 
   
 
-  <title>ABOUT | 留白酒馆</title>
+  <title>攻防世界 | 留白酒馆</title>
 
   
 
@@ -45,9 +45,9 @@
   <div class="root-container">
     
 <!-- header container -->
-<header class="header-container">
+<header class="header-container post">
   
-    <div class="post-image" style="background-image: url(/imgs/about.png)"></div>
+    <div class="post-image" style="background-image: url(/imgs/2.png)"></div>
   
 
   <!-- navbar -->
@@ -95,40 +95,172 @@
 
   
   
-
-  
-  
     <div class="header-content">
-      <div class="post-text layout-block layout-padding">
-        <h1 class="title-wrap">ABOUT</h1>
-        
-          <h2 class="title-sub-wrap">有趣的灵魂</h2>
-        
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">攻防世界</h1>
+          <h2 class="title-sub-wrap">
+            <strong>留白</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2021-12-12T13:33:27.808Z" itemprop="datePublished">2021-12-12</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/MISC/">📒 MISC</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E6%80%BB%E7%BB%93/">🏷️ 总结</a></li>
+  
+</ul>
+        </div>
       </div>
     </div>
+  
+
+  
   
   
 </header>
 
-    <!-- 分页(其他自定义页面) -->
+    <!-- 文章 -->
 
-<!-- 自定义页面 -->
-
+<!-- 文章内容 -->
 <div class="body-container">
   <article class="content-container layout-block post-container">
     <div class="article-info">
       
+      
+      
+      
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>不想做就勇敢拒绝，被伤害就打回去，得不到就果断离开，喜欢谁就直接去追。</p>
-<p> 都挺忙的，温柔留给对你好的人就行，其他事最好就是 早了断早开始 的干脆。</p>
+        <p><strong>1.</strong> <em><strong>*this_is_flag*</strong></em></p>
+<p>签到!（给的题目上边的示例里面有）</p>
+<p><strong>2.</strong> <em><strong>*PDF*</strong></em></p>
+<p>用浏览器打开，f12直接查找flag直接出来。</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/1.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>3.</strong> <em><strong>*如来十三掌*</strong></em></p>
+<p>打开文件是佛曰文字，直接与佛论禅解密（前面加上佛曰），”十三“对应的是“ROT13”的编码，解码之后得到一串字符，base64解码得到flag（工具试出来的）</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/2.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+    <figure class="figure-image">
+      <img src="/imgs/second/3.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>4.</strong> <em><strong>*give_you_flag*</strong></em></p>
+<p>附件是gif动图，WPS打开一帧一帧播放一帧最后有个二维码，缺少定位符利用画图（其他工具也行）补全</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/4.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p>扫码得到flag</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/5.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>5.</strong> <em><strong>*stegano*</strong></em></p>
+<p>把图片用浏览器打开直接可以复制上边隐藏的文字，得到英文还有BABA…（我以为是培根密码，发现根本走不通最后问了别人），用python写一个脚本直接转换成摩斯密码，在线解密得到flag</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/6.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+    <figure class="figure-image">
+      <img src="/imgs/second/7.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>6.</strong> <em><strong>*坚持60s*</strong></em></p>
+<p>下载下来是个jar文件，用给的工具里面的反编译器，查看源代码找到flag，里面是base64编码在线解码得到flag。</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/8.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+    <figure class="figure-image">
+      <img src="/imgs/second/9.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>7.</strong> <em><strong>*gif*</strong></em></p>
+<p>下载下来附件打开，里面gif文件里面有编号0–103张黑白图片，另一个文件夹里面的图片打不开，把白色看做0黑色看做1得到一大串数字，转换成字符得到flag。</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/10.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>8.</strong> <em><strong>*掀桌子*</strong></em></p>
+<p>em……还没写回来继续补充</p>
 
       </section>
 
       
       
+        <nav class="article-nav">
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/imgs/1.png"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2021/12/05/first/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">CTFWP</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
 
-      
-      
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
     </div>
     <div class="widget-info">
       <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -165,6 +297,8 @@
     </div>
   </div>
 </section>
+
+      
 
       
 <section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -216,7 +350,6 @@
     </div>
   </article>
 </div>
-
 
     <!-- footer container -->
 <footer id="footer" class="footer">
