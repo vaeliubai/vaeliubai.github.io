@@ -24,7 +24,7 @@
 
   
 
-  <title>攻防世界 | 留白酒馆</title>
+  <title>攻防世界MIsc新手区 | 留白酒馆</title>
 
   
 
@@ -98,7 +98,7 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">攻防世界</h1>
+          <h1 class="title-wrap">攻防世界MIsc新手区</h1>
           <h2 class="title-sub-wrap">
             <strong>留白</strong>
             <span>发布于</span>
@@ -220,8 +220,69 @@
     </figure>
   
 
+<p><em><strong>接着上次补充ing</strong></em></p>
 <p><strong>8.</strong> <em><strong>*掀桌子*</strong></em></p>
-<p>em……还没写回来继续补充</p>
+<p>c8e9aca0c6f2e5f3e8c4efe7a1a0d4e8e5a0e6ece1e7a0e9f3baa0e8eafae3f9e4eafae2eae4e3eaebfaebe3f5e7e9f3e4e3e8eaf9eaf3e2e4e6f2 解码这串字符，试了好多种解密工具不是常见加密手段，字母只有a-f，觉得16进制转换，用python脚本得到flag</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/11.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>9.</strong> <strong><em>*ext3</em>*</strong></p>
+<p>一个linux系统光盘,改了后缀名为zip可以解压，在得到的文件里面搜索flag</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/12.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p>打开之后得到base64编码，解码</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/13.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>10.</strong> <strong>*SimpleRAR*</strong></p>
+<p>还没想出来，回来补充</p>
+<p><strong>11.</strong> *<strong>*base64stego*</strong></p>
+<p>解压了 ，打开txt之后，发现内容是base64加密过的，加密的多少次还不知道（记得招新好像见过类似的）</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/14.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p>我太菜了 只能用git上的python脚本解码得到flag</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/15.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<p><strong>12.</strong> *<strong>*功夫再高也怕菜刀*</strong></p>
+<p>用wireshark打开pcapng文件，查找flag关键字，定位到第1150个追踪TCP流，复制从FFD8开始到FFD9的内容winHex里新建文件粘贴（tools包里的不能用…我下载的也不能用回来再找找其他）思路应该是对的…</p>
+
+    <figure class="figure-image">
+      <img src="/imgs/second/16.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+
+
+
+
+
+
+
 
       </section>
 
@@ -385,7 +446,7 @@
       
     </div>
      
-    <p>&copy; 2021 <a href="/" target="_blank">留白</a></p>
+    <p>&copy; 2022 <a href="/" target="_blank">留白</a></p>
 
     
 
