@@ -1335,7 +1335,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --global-font-size: Roboto;
+  --global-font-size: sans-serif;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #a4d8fa;
